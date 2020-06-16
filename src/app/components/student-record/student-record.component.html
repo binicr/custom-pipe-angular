@@ -1,0 +1,18 @@
+<div>
+    <form class= "form-group">
+        <div class = form-control>
+        <label for="name">Name
+        <input #nameRef type  = "text" name= "name"  value= "" (keyup) = "0">
+         </label>
+        </div>
+        <div>
+        <label for="dob">Date of Birth</label>
+        <input #dateRef type  = "text" name= "dob"  value= "{{today}}" (keyup) = "0">
+    </div>
+        <hr>
+        <p><strong>Custom revere String Pipe</strong> </p>
+        <p><strong>{{nameRef.value |reverseStr}}</strong></p>
+        <p><strong>In built Date Pipe</strong> </p>
+        <p><strong>{{dateRef.value  | date:'fullDate'}}</strong></p>
+    </form>
+</div>

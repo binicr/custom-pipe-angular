@@ -3,10 +3,15 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { StudentRecordComponent } from './components/student-record/student-record.component';
+import {ReverseString} from './pipes/reverse-pipe'
+import {DateTransform} from './pipes/date-transform'
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    StudentRecordComponent,
+    ReverseString,
+    DateTransform
   ],
   imports: [
     BrowserModule,
